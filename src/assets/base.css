@@ -1,0 +1,173 @@
+@font-face {
+  font-family: Poppins-light;
+  font-weight: 200;
+  src: url('../assets/fonts/Poppins-Light.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-reg;
+  font-weight: 400;
+  src: url('../assets/fonts/Poppins-Regular.ttf');
+  font-display: swap;
+}
+
+@font-face {
+  font-family: Poppins-bold;
+  font-weight: 700;
+  src: url('../assets/fonts/Poppins-Bold.ttf');
+  font-display: swap;
+}
+
+/* semantic color variables for this project */
+:root {
+  --font-light: Poppins-light;
+  --font-reg: Poppins-reg;
+  --font-bold: Poppins-bold;
+
+  --color-bg: #120a1d;
+  --color-bg-1: #1a0a30;
+
+  --color-primary: #1e1528;
+  --color-secondary: rgb(70, 26, 114);
+  --color-secondary1: #1e1528;
+
+  --color-highlight: rgb(218, 54, 84);
+
+  --color-border: ;
+  --color-border-hover: ;
+
+  --color-elements: ;
+
+  --color-heading: white;
+  --color-text: white;
+  --color-text-sec: ;
+  --color-text-active: rgb(231, 134, 31);
+  --color-text-hover: rgb(218, 54, 84);
+  --color-outline: yellow;
+}
+
+body.darkmode {
+  --color-bg: var(--color-bg-dark);
+  --color-bg-1: var(--color-bg-1-dark);
+
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+
+  --color-border: var(--color-border-dark);
+  --color-border-hover: var(--color-border-hover-dark);
+
+  --color-elements: var(--color-elements-dark);
+
+  --color-heading: var(--color-heading-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-active: var(--color-text-active-dark);
+  --color-text-hover: var(--color-text-hover-dark);
+}
+
+/* @media (prefers-color-scheme: dark) {
+:root { 
+  --color-bg: var(--color-bg-dark);
+  --color-bg-1: var(--color-bg-1-dark);
+
+  --color-primary: var(--color-primary-dark);
+  --color-secondary: var(--color-secondary-dark);
+
+  --color-border: var(--color-border-dark);
+  --color-border-hover: var(--color-border-hover-dark);
+
+  --color-elements: var(--color-elements-dark);
+
+  --color-heading: var(--color-heading-dark);
+  --color-text: var(--color-text-dark);
+  --color-text-active: var(--color-text-active-dark);
+  --color-text-hover: var(--color-text-hover-dark);
+}
+} */
+
+/** 
+------------- Base Styles ------------- 
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  position: relative;
+  font-weight: normal;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  min-height: 100vh;
+  color: var(--color-text);
+  background: var(--color-bg);
+  font-family: var(--font-reg), Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+    Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-size: 16px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  /* margin: 0; 
+padding: 0.67em 0;
+*/
+  color: var(--color-heading);
+  font-family: var(--font-bold);
+}
+
+a {
+  color: var(--color-text);
+  text-decoration: none;
+}
+
+button,
+textarea,
+select,
+input {
+  font: inherit;
+  color: var(--color-text);
+  background-color: var(--color-secondary);
+  border: 1px solid;
+  border-radius: 7px;
+  /* padding: 0.5em 1em; */
+}
+
+button {
+  cursor: pointer;
+  /* padding: 0.3em 1em; */
+}
+
+button:hover,
+a:hover {
+  color: var(--color-text-hover);
+}
+
+button:active,
+a:active,
+select:active {
+  outline: 2px solid var(--color-outline);
+}
+
+button:focus-visible,
+a:focus-visible,
+textarea:focus-visible,
+select:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--color-outline);
+}

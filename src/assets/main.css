@@ -1,0 +1,97 @@
+@import './base.css';
+
+/** 
+    ------------- Project Specific Base Styles ------------- 
+*/
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  height: 100%;
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+}
+
+/* Hide Button From Number Input Field */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/*Firefox */
+input[type=number] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+/**
+    ------------- Utility Classes: ------------- 
+*/
+.myContainer {
+  /* width: 92%; */
+  /* padding: 0 5vw; */
+  max-width: 1300px;
+  margin: 0 auto;
+  width: 95%;
+}
+
+@media (min-width: 640px) {
+  .myContainer {
+    width: 92%;
+  }
+}
+
+.reg {
+  font-family: var(--font-reg);
+}
+
+.bold {
+  font-family: var(--font-bold);
+}
+
+.light {
+  font-family: var(--font-light);
+}
+
+.titleWithoutOverflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+
+/* 
+.ta-center{
+  text-align: center;
+}
+
+.container{
+  width: 90%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+.row{
+  display: flex;
+}
+
+.col{
+  width: 100%;
+}
+
+.fd-col{
+  flex-direction: column;
+}
+
+.ai-center{
+  align-items: center;
+}
+
+.jc-center{
+  justify-content: center;
+}
+*/

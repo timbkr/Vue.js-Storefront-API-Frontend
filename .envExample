@@ -1,0 +1,17 @@
+# TODO:
+# 1. Change VITE_STORE_URL & VITE_STOREFRONT_ACCESS_TOKEN to your credentials
+# 2. Rename this file into '.env'
+
+# Info: 
+# Vite is needed for the environment variables to work on client side (no step needed if you haven't removed Vite from the dependencies)
+# If you dont want to use environment variables, go to '.\src\utils\graphQLClient.ts' and fill in your Store Credentials there
+
+# Making use of Vite built in dotenv support (variables have to be prefixed with 'VITE' to work on client side) 
+    # Info: https://jasonwatmore.com/post/2022/05/28/vue-3-vite-access-environment-variables-from-dotenv-env
+# Access Environment Variable: const storeURL = import.meta.env.VITE_STORE_URL
+
+
+VITE_STORE_URL="https://YOUR-STORE-ADDRESS.myshopify.com/api/" 
+VITE_STOREFRONT_ACCESS_TOKEN="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
+
+
