@@ -146,7 +146,7 @@ function updateLocalCart(newCart: object) {
         <div class="wrapper">
           <RouterLink class="navLink cartAnchor" to="/cart">
             <span class="cartLink">Cart</span>
-            <span class="cartQuantity">{{ cartLocal.hasOwnProperty('id') ? cartLocal.totalQuantity : 0 }}</span>
+            <span class="cartQuantity">{{ cartLocal?.hasOwnProperty('id') ? cartLocal.totalQuantity : 0 }}</span>
           </RouterLink>
         </div>
       </div>
